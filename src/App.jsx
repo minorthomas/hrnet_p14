@@ -1,11 +1,13 @@
 import { Router } from './router/Router';
-import { Navigation } from './components/Navigation';
+import { Navigation } from './components/Navigation/Navigation';
 import './styles/global.scss';
 
 export function App() {
     return (
         <>
-            <Navigation />
+            <header>
+                <Navigation />
+            </header>
             <Router />
         </>
     );

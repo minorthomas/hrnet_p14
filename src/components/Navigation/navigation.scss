@@ -1,0 +1,32 @@
+@use '../../styles/utils/' as *;
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+    gap: 1em;
+    flex-wrap: wrap;
+    
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        li {
+            white-space: nowrap;
+            a {
+                padding: 0.5em 1em;
+                
+                &:hover {
+                    border-radius: 1.5em;
+                    background-color: #283441;
+                }
+            }
+        }
+    }
+}

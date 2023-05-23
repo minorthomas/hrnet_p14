@@ -1,7 +1,9 @@
 import { Link, NavLink } from 'react-router-dom';
+import './navigation.scss';
+
 export function Navigation() {
     return (
-        <nav>
+        <nav className='navigation'>
             <h1>
                 <Link to='/'>HRnet</Link>
             </h1>

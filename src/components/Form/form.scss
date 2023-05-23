@@ -1,0 +1,23 @@
+@use '../../styles/utils/' as *;
+
+.create_form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+
+    &_input {
+
+        &-firstname {
+            flex: 2;
+        }
+
+        &-lastname {
+            flex: 2;
+        }
+
+        &-submit {
+            flex: 1;
+        }
+    }
+}
