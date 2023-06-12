@@ -3,6 +3,7 @@ import { Navigation } from './components/Navigation/Navigation';
 import './styles/global.scss';
 
 export function App() {
+    
     return (
         <>
             <header>

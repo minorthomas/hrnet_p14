@@ -1,3 +1,9 @@
+import { List } from '../components/List/List';
+
 export function EmployeesList() {
-    return <div>EmployeesList</div>;
+    return (
+        <main>
+            <List />
+        </main>
+    );
 }

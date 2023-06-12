@@ -25,6 +25,14 @@ body {
     position: relative;
     gap: 1em;
     color: $white;
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 0 0 5em 0;
+    }
 
     a {
         text-decoration: none;
@@ -48,9 +56,14 @@ body {
     }
 
     .active {
-        color: #149ECA;
+        color: $text;
         background-color: #283441;
         border-radius: 1.5em;
         font-weight: 300;
+    }
+
+    .input-error {
+        color: rgb(255, 113, 113);
+        font-size: 0.8em;
     }
 }

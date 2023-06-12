@@ -1,0 +1,10 @@
+.filter {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+
+    &_clear {
+        color: black !important;
+        font-size: 1em;
+    }
+}

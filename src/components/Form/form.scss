@@ -2,22 +2,88 @@
 
 .create_form {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    max-width: 25em;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 1em;
+    background-color: $primary;
+    padding: 1em 0;
+    border-radius: 1.5em;
+    width: 100%;
 
     &_input {
+        display: flex;
+        flex-direction: column;
+        max-width: 15em;
 
-        &-firstname {
-            flex: 2;
-        }
+        input, &-submit {
+            width: 100%;
+            background-color: $tertiary;
+            padding: 1em 1.2em;
+            border-radius: 1em;
+            border: 0;
+            color: white;
+            font-family: $font;
+            font-size: 0.8em;
 
-        &-lastname {
-            flex: 2;
+            &::placeholder {
+                color: white;
+            }
+
+            &:focus {
+                &::placeholder {
+                    color: transparent;
+                }
+            }
         }
 
         &-submit {
-            flex: 1;
+            text-align: center;
+            font-weight: bold;
+
+            &:hover {
+                background-color: $secondary !important;
+                color: $text;
+            }
+        }
+
+        .Dropdown-root {
+            padding: 0 !important;
+            width: 11.5em;
+
+            &:is(.is-open) {
+                .Dropdown-control {
+                    border-radius: 1em 1em 0 0;
+                }
+            }
+
+            .Dropdown-control {
+                width: 100%;
+                background-color: $tertiary;
+                padding: 1em 1.2em;
+                border-radius: 1em;
+                border: 0;
+                color: white;
+                font-family: $font;
+                font-size: 0.8em;
+            }
+        }
+
+        .Dropdown-menu {
+            background-color: $tertiary;
+            border: transparent;
+            color: white;
+            border-radius: 0 0 1em 1em;
+
+            .Dropdown-option {
+                color: white;
+                font-size: 0.8em;
+
+                &:is(.is-selected), &:hover {
+                    background-color: $primary;
+                }
+            }
         }
     }
 }
