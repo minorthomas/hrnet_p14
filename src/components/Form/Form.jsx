@@ -224,10 +224,12 @@ export function Form() {
                     )}
                 </div>
 
-                <input
+                <button
                     className='create_form_input create_form_input-submit'
                     type='submit'
-                />
+                >
+                    Send
+                </button>
             </form>
         </>
     );

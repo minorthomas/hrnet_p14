@@ -19,7 +19,7 @@
 
         input, &-submit {
             width: 100%;
-            background-color: $tertiary;
+            background-color: $tertiary !important;
             padding: 1em 1.2em;
             border-radius: 1em;
             border: 0;
